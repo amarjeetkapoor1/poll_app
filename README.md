@@ -35,7 +35,7 @@ Run following commands in terminal
     
     $ sudo apt-get install python-mysqldb
 
-6)django
+6) django
 
 Run following commands in terminal
     
