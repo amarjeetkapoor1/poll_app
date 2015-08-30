@@ -1,10 +1,13 @@
-from django.conf.urls import patterns, url
+
+from django.conf.urls import patterns, include, url
+from django.contrib import admin
 
 from polls import views
 
 
 
 urlpatterns = patterns('',
+	url(r'^admin/', include(admin.site.urls)),
     # ex: /polls/
     url(r'^$', views.index, name='index'),
 	url(r'^(?P<question_id>\d+)/$', views.detail, name='detail'),
