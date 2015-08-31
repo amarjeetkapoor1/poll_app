@@ -46,5 +46,11 @@ def vote(request, question_id):
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/results.html', {'question': question})
-
-
+    
+def result_all(request):
+	latest_question = Question.objects.order_by()
+	template = loader.get_template('polls/results_all.html')
+	context = RequestContext(request, {'latest_question_list': latest_question,})
+	return HttpResponse(template.render(context))
+    
+    
