@@ -54,7 +54,7 @@ Run following commands in terminal
     $ create database mysite;
     $ quit
     
-3) Edit settings.py file in mysite/mysite directory. Things to be edited are:
+3) Edit settings.py file in mysite/polls directory. Things to be edited are:
 
 Line No 60 : DATABASES
     
