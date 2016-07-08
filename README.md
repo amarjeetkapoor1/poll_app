@@ -57,6 +57,9 @@ Run following commands in terminal
 3) Edit settings.py file in mysite/polls directory. Things to be edited are:
 
 Line No 60 : DATABASES
+
+manpreet kaur. manpreet kar
+
     
     NAME : mysite
     USER : Your MySQL username
